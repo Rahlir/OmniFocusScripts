@@ -17,8 +17,8 @@ last. Simply select all the actions you want sorted and click on the **Sort
 Tags** button in toolbar.  To demonstrate, I have included some pictures from
 my own setup: 
 
-![Setup p1](https://Rahlir.github.io/Assets/tags.png) 
-![Setup p2](https://Rahlir.github.io/Assets/projects.png)
+<img src="https://Rahlir.github.io/Assets/tags.png" width="200"/>
+<img src="https://Rahlir.github.io/Assets/projects.png" width="700"/>
 
 ### Configuration
 
