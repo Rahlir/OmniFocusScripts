@@ -18,6 +18,10 @@ Tags** button in toolbar.  To demonstrate, I have included some pictures from
 my own setup: 
 
 <img src="https://Rahlir.github.io/Assets/tags.png" width="200"/>
+
+**Before:**
+<img src="https://Rahlir.github.io/Assets/before.png" width="900"/>
+**After Running the Script:**
 <img src="https://Rahlir.github.io/Assets/projects.png" width="900"/>
 
 ### Configuration
