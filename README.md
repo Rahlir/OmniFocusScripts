@@ -55,3 +55,13 @@ You can see my OmniFocus toolbar with those icons used here:
 ![toolbar](https://Rahlir.github.io/Assets/toolbar.png)
 
 The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Icons).
+
+## Scripts
+
+1. **[Sort Tags](https://github.com/Rahlir/OmniFocusScripts/tree/master/Sort%20Tags)**: 
+Define categories of tags and their priorities. Then, you can use the script to
+order your tags according to the priority of the category.
+2. **[Defer](https://github.com/Rahlir/OmniFocusScripts/tree/master/Defer)**:
+Defer all the selected tasks to tomorrow. This script can easily be modified to
+defer all the selected tasks to _x_ days from today. Makes deferring much
+quicker and can be done in batch.
