@@ -1,5 +1,5 @@
 property TAGPRIORITY : {¬
-	{name:"Location", priority:3}, {name:"School", priority:2}, {name:"Activity", priority:2}, {name:"Importance", priority:0} ¬
+	{name:"Location", priority:3}, {name:"School", priority:2}, {name:"Activity", priority:2}, {name:"Difficulty", priority:0}, {name:"Importance", priority:-1} ¬
 	}
 
 on getTagPriority()
@@ -68,3 +68,9 @@ on getSelectedActions()
 		end tell
 	end tell
 end getSelectedActions
+
+on getSettingItem(settingId)
+	tell application "OmniFocus"
+		return value of setting id settingId of default document
+	end tell
+end getSettingItem
