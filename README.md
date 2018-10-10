@@ -1,57 +1,57 @@
-# OmniFocus 3 Applescripts
+# OmniFocus 3 AppleScripts
 
-## Sort Tags
+## About
 
-I have hacked together a simple script that sorts selected action's tags based
-on a predefined order of tag categories. This is done to enhance structure in
-all perspectives especially in perspectives where you have a lot of actions
-with a long list of tags.
+This repository contains useful scripts for OmniFocus 3. I have also included a
+directory with some icons created from the FontAwesome set. I am planning to
+update this repository somewhat regularly as I write new scripts I find useful.
+Some scripts take inspiration and may be similar to the popular collection by
+[Brandon Pittman](https://github.com/brandonpittman/OmniFocus).
 
-### How this works
+## Installation
 
-For instance, imagine that you have a tag for **Activity**, **School**,
-**Location**, **Importance** (my current setup) and then some other
-miscellaneous tags. This script sorts those tags for selected actions so that
-**Activity** appears first, **Location** second, and **Importance** always
-last. Simply select all the actions you want sorted and click on the **Sort
-Tags** button in toolbar.  To demonstrate, I have included some pictures from
-my own setup: 
-
-<img src="https://Rahlir.github.io/Assets/tags.png" width="200"/>
-
-**Before:**
-<img src="https://Rahlir.github.io/Assets/before.png" width="900"/>
-**After Running the Script:**
-<img src="https://Rahlir.github.io/Assets/projects.png" width="900"/>
-
-### Configuration
-
-By default, the ordering is based on my own workflow. Obviously, everyone has
-different tags and different tag categories/hierarchy. To use this script with
-your own setup, change the first statement of the _omnifocuslib.applescript_.
-So, for example if you have tag categories called **People** and **Energy
-Level** and you want the tags belonging to **People** to be always first and
-**Energy Level** to be always last, the first statement of
-_omnifocuslib.applescript_ would look like:
-
-```applescript
-property TAGPRIORITY : {¬
-    {name:"People", priority:2}, {name: "Energy Level", priority:0}¬
-    }
-```
-
-Note that label categories that are not specified in the script will always
-have a priority = 1.
-
-### Installation
-
-After you have changed the `TAGPRIORITY` property, you have to compile the two
-scripts. Then, you have to copy _omnifocuslib.scpt_ to `~/Library/Script
-Libraries/` and _sorttags.scpt_ to your AppleScript directory that you can find
-by going to `OmniFocus menubar -> Help -> Open Scripts Folder`. Compiling the
-scripts can be done from the command line:
+For any of the scripts to work you have to first install the library script
+that can be found [here](https://github.com/Rahlir/OmniFocusScripts/Library).
+Compile the file **omnifocuslib.applescript**.Then, copy the compiled file
+**omnifocuslib.scpt** to the directory `~/Library/Script Libraries/`. The
+Terminal commands to do that are 
 
 ```bash
-osacompile -o Scripts/omnifocuslib.scpt Scripts/omnifocuslib.applescript
-osacompile -o Scripts/sorttags.scpt Scripts/sorttags.applescript
+osacompile -o Library/omnifocuslib.scpt Library/omnifocuslib.applescript
+cp Library/omnifocuslib.scpt ~/Library/Script\ Libraries/
 ```
+
+To install some OmniFocus script, the process is similar: Compile the script
+using `osacompile` and then copy it to the OmniFocus 3 script directory. To see
+what your script directory is, open OmniFocus 3 and navigate to `Menubar ->
+Help -> Open Scripts Folder`. Typically, this directory is either
+
+```
+~/Library/Application Scripts/com.omnigroup.OmniFocus3
+``` 
+
+or
+
+```
+~/Library/Application Scripts/com.omnigroup.OmniFocus3.MacAppStore
+``` 
+
+depending on how you purchased OmniFocus. If there are additional installation steps for
+a particular script, these will be outlined in a README.md in the script's
+folder.
+
+## Using the Icons
+
+To use the Scripts in OmniFocus, one typically adds a button for that script in
+the toolbar. OmniFocus uses the script's Finder icon for the script button. If
+you are using more than 1 script it can be difficult to distinquish them.
+Moreover, the default icon, in my opinion, looks boring. Hence, I have
+converted some FontAwesome icon to the macOS `.icns` format. The icons can be
+found in different colors using mostly the OmniFocus 3 dark color pallette. To
+use them, open the location of a script in Finder and open the _Get Info_
+window. Then, drag the `.icns` file to the script's icon in _Info_ window.
+
+You can see my OmniFocus toolbar with those icons used here:
+![toolbar](https://Rahlir.github.io/Assets/toolbar.png)
+
+The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/Icons).
