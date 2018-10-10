@@ -1,23 +1,11 @@
-After you have changed the `TAGPRIORITY`
-property, you have to compile the two scripts. Then, you have to copy
-_omnifocuslib.scpt_ to `~/Library/Script Libraries/` and _sorttags.scpt_ to
-your AppleScript directory that you can find by going to `OmniFocus menubar ->
-Help -> Open Scripts Folder`. Compiling the scripts can be done from the
-command line:
-
-```bash
-osacompile -o Scripts/omnifocuslib.scpt Scripts/omnifocuslib.applescript
-osacompile -o Scripts/sorttags.scpt Scripts/sorttags.applescript
-```
-
-## Sort Tags
+# Sort Tags
 
 I have hacked together a simple script that sorts selected action's tags based
 on a predefined order of tag categories. This is done to enhance structure in
 all perspectives especially in perspectives where you have a lot of actions
 with a long list of tags.
 
-### How this works
+## How this works
 
 For instance, imagine that you have a tag for **Activity**, **School**,
 **Location**, **Importance** (my current setup) and then some other
@@ -34,7 +22,7 @@ my own setup:
 **After Running the Script:**
 <img src="https://Rahlir.github.io/Assets/projects.png" width="900"/>
 
-### Configuration
+## Configuration
 
 By default, the ordering is based on my own workflow. Obviously, everyone has
 different tags and different tag categories/hierarchy. To use this script with
@@ -53,15 +41,8 @@ property TAGPRIORITY : {¬
 Note that label categories that are not specified in the script will always
 have a priority = 1.
 
-### Installation
+## Installation
 
-After you have changed the `TAGPRIORITY` property, you have to compile the two
-scripts. Then, you have to copy _omnifocuslib.scpt_ to `~/Library/Script
-Libraries/` and _sorttags.scpt_ to your AppleScript directory that you can find
-by going to `OmniFocus menubar -> Help -> Open Scripts Folder`. Compiling the
-scripts can be done from the command line:
-
-```bash
-osacompile -o Scripts/omnifocuslib.scpt Scripts/omnifocuslib.applescript
-osacompile -o Scripts/sorttags.scpt Scripts/sorttags.applescript
-```
+After you have changed the `TAGPRIORITY` property, you have to compile the
+script. This is essentially the same process as outlined in the main README.
+After you compile the script, copy it to the OmniFocus 3 script directory.
