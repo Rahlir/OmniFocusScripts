@@ -1,3 +1,7 @@
+property author : "Tadeas Uhlir"
+property version : "1.0"
+property name : "omnifocuslib"
+
 property TAGPRIORITY : {¬
 	{name:"Location", priority:3}, {name:"School", priority:2}, {name:"Activity", priority:2}, {name:"Difficulty", priority:0}, {name:"Importance", priority:-1} ¬
 	}

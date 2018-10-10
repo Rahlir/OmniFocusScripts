@@ -1,3 +1,7 @@
+property author : "Tadeas Uhlir"
+property version : "1.0"
+property name : "defer"
+
 use omniLib : script "omnifocuslib"
 
 on run
