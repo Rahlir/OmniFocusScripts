@@ -11,7 +11,7 @@ Some scripts take inspiration and may be similar to the popular collection by
 ## Installation
 
 For any of the scripts to work you have to first install the library script
-that can be found [here](https://github.com/Rahlir/OmniFocusScripts/Library).
+that can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Library).
 Compile the file **omnifocuslib.applescript**.Then, copy the compiled file
 **omnifocuslib.scpt** to the directory `~/Library/Script Libraries/`. The
 Terminal commands to do that are 
@@ -54,4 +54,4 @@ window. Then, drag the `.icns` file to the script's icon in _Info_ window.
 You can see my OmniFocus toolbar with those icons used here:
 ![toolbar](https://Rahlir.github.io/Assets/toolbar.png)
 
-The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/Icons).
+The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Icons).
