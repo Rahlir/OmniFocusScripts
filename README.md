@@ -65,3 +65,7 @@ order your tags according to the priority of the category.
 Defer all the selected tasks to tomorrow. This script can easily be modified to
 defer all the selected tasks to _x_ days from today. Makes deferring much
 quicker and can be done in batch.
+3. **[Edit Links](https://github.com/Rahlir/OmniFocusScripts/tree/master/Edit%20Links)**:
+Edit displayed name of all links in notes of all selected tasks or projects.
+Useful if you often add links to your notes and do not want to manually edit
+their displayed name one by one.
