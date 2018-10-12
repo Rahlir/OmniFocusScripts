@@ -40,7 +40,21 @@ depending on how you purchased OmniFocus. If there are additional installation s
 a particular script, these will be outlined in a README.md in the script's
 folder.
 
-## Using the Icons
+## Scripts
+
+1. **[Sort Tags](https://github.com/Rahlir/OmniFocusScripts/tree/master/Sort%20Tags)**: 
+Define categories of tags and their priorities. Then, you can use the script to
+order your tags according to the priority of the category.
+2. **[Defer](https://github.com/Rahlir/OmniFocusScripts/tree/master/Defer)**:
+Defer all the selected tasks to tomorrow. This script can easily be modified to
+defer all the selected tasks to _x_ days from today. Makes deferring much
+quicker and can be done in batch.
+3. **[Edit Links](https://github.com/Rahlir/OmniFocusScripts/tree/master/Edit%20Links)**:
+Edit displayed name of all links in notes of all selected tasks or projects.
+Useful if you often add links to your notes and do not want to manually edit
+their displayed name one by one.
+
+## Icons
 
 To use the Scripts in OmniFocus, one typically adds a button for that script in
 the toolbar. OmniFocus uses the script's Finder icon for the script button. If
@@ -56,16 +70,9 @@ You can see my OmniFocus toolbar with those icons used here:
 
 The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Icons).
 
-## Scripts
+### Attribution
 
-1. **[Sort Tags](https://github.com/Rahlir/OmniFocusScripts/tree/master/Sort%20Tags)**: 
-Define categories of tags and their priorities. Then, you can use the script to
-order your tags according to the priority of the category.
-2. **[Defer](https://github.com/Rahlir/OmniFocusScripts/tree/master/Defer)**:
-Defer all the selected tasks to tomorrow. This script can easily be modified to
-defer all the selected tasks to _x_ days from today. Makes deferring much
-quicker and can be done in batch.
-3. **[Edit Links](https://github.com/Rahlir/OmniFocusScripts/tree/master/Edit%20Links)**:
-Edit displayed name of all links in notes of all selected tasks or projects.
-Useful if you often add links to your notes and do not want to manually edit
-their displayed name one by one.
+The icons are modified icons from the FontAwesome collection. The official
+website can be found [here](https://fontawesome.com/). There is also a [Github
+repository](https://github.com/FortAwesome/Font-Awesome).
+
