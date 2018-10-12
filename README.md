@@ -76,4 +76,4 @@ The icons are modified icons from the FontAwesome collection. The official
 website can be found [here](https://fontawesome.com/). There is also a [Github
 repository](https://github.com/FortAwesome/Font-Awesome).
 
-![test](https://Rahlir.github.io/Assets/icons/user.svg)
+<img src="https://Rahlir.github.io/Assets/icons/user.svg" width=50%>
