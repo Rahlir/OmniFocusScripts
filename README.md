@@ -40,6 +40,30 @@ depending on how you purchased OmniFocus. If there are additional installation s
 a particular script, these will be outlined in a README.md in the script's
 folder.
 
+### Compile Script
+
+I also added a compiler script to simplify the process. This is the executable
+`compile.sh` script. You can just supply the directory with the script you wish
+to compile and it will compile it to either the OmniFocus script folder or the
+Script Library folder. Note that the `compile.sh` uses the
+`com.omnigroup.OmniFocus3` folder, hence, if your script folder is different
+(for instance `com.omnigroup.OmniFocus3MacAppStore`), you need to change the
+variable `scriptfolder` in the `compile.sh` file - it is located at the top of
+the script.
+
+**Usage (from the OmniFocusScripts folder):**
+
+To compile the library:
+```bash
+./compile.sh Library
+```
+
+To compile the Duration script:
+```bash
+./compile.sh Duration
+```
+
+
 ## Scripts
 
 1. **[Sort Tags](https://github.com/Rahlir/OmniFocusScripts/tree/master/Sort%20Tags)**: 
@@ -53,6 +77,27 @@ quicker and can be done in batch.
 Edit displayed name of all links in notes of all selected tasks or projects.
 Useful if you often add links to your notes and do not want to manually edit
 their displayed name one by one.
+4. **[Duration](https://github.com/Rahlir/OmniFocusScripts/tree/master/Duration)**:
+Simple script that calculates the total duration of all selected tasks. This is
+useful when you have a project and want to quickly see what is the estimated
+duration. I also use this to see how long will it take to complete the tasks I
+scheduled for today. The script defaults to 15 minutes when duration is not set
+in OmniFocus. This can be changed in the `duration.applescript` file: change
+the argument of `getDuration` handle on line 6.
+5. **[Start Task](https://github.com/Rahlir/OmniFocusScripts/tree/master/Start%20Task)**:
+This is a quite complex script. It is for those people that are using the **Timing** app to track what they have done. This script takes the selected task in OmniFocus and checks if the project or action group the task belongs to is in **Timing**. If not, it then offers to add this project to **Timing**: It dutifully asks you for the parent project this new project should belong to, the color of the new project, and finally the productivity score of the project. I also use this script to start the **Focus** app which blocks distracting websites and apps. I realize that **Focus** is not widely used app, hence, if you are not using **Focus**, just delete the line 23 from `starttask.applescript`:
+
+```applescript
+open location "focus://focus?minutes=" & estDuration
+```
+
+6. **[Next to Front](https://github.com/Rahlir/OmniFocusScripts/tree/master/Next%20to%20Front)**:
+This script adds the _Forecast Tag_ as the primary tag of all selected actions.
+I wrote this because on iOS you can often only see 1 tag per action and it is
+important for me to see whether the action is tagged with the _Forecast Tag_.
+My forecast tag is "🗄Next", if you are using a different forecast tag (which
+is almost certainly the case), change the variable `nextName` in
+`nexttofront.applescript`.
 
 ## Icons
 
@@ -75,5 +120,3 @@ The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/tr
 The icons are modified icons from the FontAwesome collection. The official
 website can be found [here](https://fontawesome.com/). There is also a [Github
 repository](https://github.com/FortAwesome/Font-Awesome).
-
-<!---Test <img src="https://Rahlir.github.io/Assets/icons/user.svg" width=10%> -->
