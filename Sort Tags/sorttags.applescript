@@ -1,6 +1,6 @@
 property author : "Tadeas Uhlir"
 property version : "1.0"
-property name : "defer"
+property name : "sort tags"
 
 use omniLib : script "omnifocuslib"
 
