@@ -69,14 +69,17 @@ To compile the Duration script:
 1. **[Sort Tags](https://github.com/Rahlir/OmniFocusScripts/tree/master/Sort%20Tags)**: 
 Define categories of tags and their priorities. Then, you can use the script to
 order your tags according to the priority of the category.
+
 2. **[Defer](https://github.com/Rahlir/OmniFocusScripts/tree/master/Defer)**:
 Defer all the selected tasks to tomorrow. This script can easily be modified to
 defer all the selected tasks to _x_ days from today. Makes deferring much
 quicker and can be done in batch.
+
 3. **[Edit Links](https://github.com/Rahlir/OmniFocusScripts/tree/master/Edit%20Links)**:
 Edit displayed name of all links in notes of all selected tasks or projects.
 Useful if you often add links to your notes and do not want to manually edit
 their displayed name one by one.
+
 4. **[Duration](https://github.com/Rahlir/OmniFocusScripts/tree/master/Duration)**:
 Simple script that calculates the total duration of all selected tasks. This is
 useful when you have a project and want to quickly see what is the estimated
@@ -84,12 +87,16 @@ duration. I also use this to see how long will it take to complete the tasks I
 scheduled for today. The script defaults to 15 minutes when duration is not set
 in OmniFocus. This can be changed in the `duration.applescript` file: change
 the argument of `getDuration` handle on line 6.
-5. **[Start Task](https://github.com/Rahlir/OmniFocusScripts/tree/master/Start%20Task)**:
-This is a quite complex script. It is for those people that are using the **Timing** app to track what they have done. This script takes the selected task in OmniFocus and checks if the project or action group the task belongs to is in **Timing**. If not, it then offers to add this project to **Timing**: It dutifully asks you for the parent project this new project should belong to, the color of the new project, and finally the productivity score of the project. I also use this script to start the **Focus** app which blocks distracting websites and apps. I realize that **Focus** is not widely used app, hence, if you are not using **Focus**, just delete the line 23 from `starttask.applescript`:
 
-```applescript
-open location "focus://focus?minutes=" & estDuration
-```
+5. **[Start Task](https://github.com/Rahlir/OmniFocusScripts/tree/master/Start%20Task)**:
+This is a quite complex script. It is for those people that are using the
+**Timing** app to track what they have done. This script takes the selected
+task in OmniFocus and checks if the project or action group the task belongs to
+is in **Timing**. If not, it then offers to add this project to **Timing**: It
+dutifully asks you for the parent project this new project should belong to,
+the color of the new project, and finally the productivity score of the
+project. The script also starts the **Focus** app which blocks
+distracting websites and apps if you have it installed on your computer.
 
 6. **[Next to Front](https://github.com/Rahlir/OmniFocusScripts/tree/master/Next%20to%20Front)**:
 This script adds the _Forecast Tag_ as the primary tag of all selected actions.
