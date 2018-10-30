@@ -20,7 +20,11 @@ on run
 		if isInTiming then
 			set projectItem to front project whose name is pName
 			start task with title name of taskItem project projectItem for about estDuration * 60
-			open location "focus://focus?minutes=" & estDuration
+			try
+				open location "focus://focus?minutes=" & estDuration
+			on error number -10814
+				return "No Focus"
+			end try
 		else
 			return "Cancelled"
 		end if

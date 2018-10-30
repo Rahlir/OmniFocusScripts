@@ -31,4 +31,6 @@ else
 	trgt="$scriptfolder"/"$bn".scpt
 fi
 
+rm "$trgt"
+
 osacompile -o "$trgt" "$src" && echo "DONE"
