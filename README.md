@@ -10,9 +10,38 @@ Some scripts take inspiration and may be similar to the popular collection by
 
 ## Installation
 
-For any of the scripts to work you have to first install the library script
-that can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Library).
-Compile the file **omnifocuslib.applescript**.Then, copy the compiled file
+### Compile Script
+
+I added a compiler script to simplify the installation process. This is the
+executable `compile.sh` script. You can just supply the directory with the
+script you wish to compile and it will compile it to either the OmniFocus
+script folder or the Script Library folder. Note that the `compile.sh` uses the
+`com.omnigroup.OmniFocus3` folder, hence, if your script folder is different
+(for instance `com.omnigroup.OmniFocus3.MacAppStore`), you need to change the
+variable `scriptfolder` in the `compile.sh` file - it is located at the top of
+the script.
+
+Make sure to install the `Library` script first - the library is used by most
+of the other scripts.
+
+**Example Usage (from the OmniFocusScripts folder):**
+
+To compile the library:
+```bash
+./compile.sh Library
+```
+
+To compile the Duration script:
+```bash
+./compile.sh Duration
+```
+
+### Manually
+
+You can also compile and install the scripts manually. Make sure that the
+library script is installed first.
+
+To do that, compile the file **omnifocuslib.applescript**.Then, copy the compiled file
 **omnifocuslib.scpt** to the directory `~/Library/Script Libraries/`. The
 Terminal commands to do that are 
 
@@ -21,7 +50,7 @@ osacompile -o Library/omnifocuslib.scpt Library/omnifocuslib.applescript
 cp Library/omnifocuslib.scpt ~/Library/Script\ Libraries/
 ```
 
-To install some OmniFocus script, the process is similar: Compile the script
+To install one of the OmniFocus scripts, compile the script
 using `osacompile` and then copy it to the OmniFocus 3 script directory. To see
 what your script directory is, open OmniFocus 3 and navigate to `Menubar ->
 Help -> Open Scripts Folder`. Typically, this directory is either
@@ -36,33 +65,10 @@ or
 ~/Library/Application Scripts/com.omnigroup.OmniFocus3.MacAppStore
 ``` 
 
-depending on how you purchased OmniFocus. If there are additional installation steps for
-a particular script, these will be outlined in a README.md in the script's
-folder.
+depending on how you purchased OmniFocus. 
 
-### Compile Script
-
-I also added a compiler script to simplify the process. This is the executable
-`compile.sh` script. You can just supply the directory with the script you wish
-to compile and it will compile it to either the OmniFocus script folder or the
-Script Library folder. Note that the `compile.sh` uses the
-`com.omnigroup.OmniFocus3` folder, hence, if your script folder is different
-(for instance `com.omnigroup.OmniFocus3MacAppStore`), you need to change the
-variable `scriptfolder` in the `compile.sh` file - it is located at the top of
-the script.
-
-**Usage (from the OmniFocusScripts folder):**
-
-To compile the library:
-```bash
-./compile.sh Library
-```
-
-To compile the Duration script:
-```bash
-./compile.sh Duration
-```
-
+### Configuration
+There might be additional configuration steps. They are described either in a README of the script or in the next section of this README.
 
 ## Scripts
 
@@ -122,7 +128,7 @@ You can see my OmniFocus toolbar with those icons used here:
 
 The icon files can be found [here](https://github.com/Rahlir/OmniFocusScripts/tree/master/Icons).
 
-### Attribution
+## Attribution
 
 The icons are modified icons from the FontAwesome collection. The official
 website can be found [here](https://fontawesome.com/). There is also a [Github
