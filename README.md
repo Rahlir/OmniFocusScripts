@@ -21,7 +21,11 @@ script folder or the Script Library folder. Note that the `compile.sh` uses the
 variable `scriptfolder` in the `compile.sh` file - it is located at the top of
 the script.
 
-Make sure to install the `Library` script first - the library is used by most
+There is another library specifically for the interaction with the Timing app.
+This library is required by the script `Start Task`. To install this library,
+just run the script `compile.sh` with the option `-t`.
+
+Make sure to install the `Library` script first - this library is used by most
 of the other scripts.
 
 **Example Usage (from the OmniFocusScripts folder):**
@@ -31,9 +35,22 @@ To compile the library:
 ./compile.sh Library
 ```
 
+To compile the library with the support for the Timing app (needed by the
+`Start Task` script):
+
+```bash
+./compile.sh -t Library
+```
+
 To compile the Duration script:
 ```bash
 ./compile.sh Duration
+```
+
+You can also see how to use the script `compile.sh` by running it with the -h
+option:
+```bash
+./compile.sh -h
 ```
 
 ### Manually
@@ -101,8 +118,10 @@ task in OmniFocus and checks if the project or action group the task belongs to
 is in **Timing**. If not, it then offers to add this project to **Timing**: It
 dutifully asks you for the parent project this new project should belong to,
 the color of the new project, and finally the productivity score of the
-project. The script also starts the **Focus** app which blocks
-distracting websites and apps if you have it installed on your computer.
+project. The script also starts the **Focus** app if it is installed on your
+computer. This app blocks distracting websites and apps. 
+_Note: you need to have compiled the `timinglibrary` by running the script
+`compile.sh` with the -t option (see above)._
 
 6. **[Next to Front](https://github.com/Rahlir/OmniFocusScripts/tree/master/Next%20to%20Front)**:
 This script adds the _Forecast Tag_ as the primary tag of all selected actions.

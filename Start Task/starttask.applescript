@@ -1,4 +1,5 @@
 use omni : script "omnifocuslib"
+use timing : script "timinglib"
 use scripting additions
 
 on run
@@ -15,8 +16,8 @@ on run
 	end tell
 	
 	tell application "TimingHelper"
-		set isInTiming to omni's isInTimings(pName)
-		if not isInTiming then set isInTiming to not (omni's addToTimings(pName) is false)
+		set isInTiming to timing's isInTimings(pName)
+		if not isInTiming then set isInTiming to not (timing's addToTimings(pName) is false)
 		if isInTiming then
 			set projectItem to front project whose name is pName
 			start task with title name of taskItem project projectItem for about estDuration * 60
