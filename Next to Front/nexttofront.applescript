@@ -8,7 +8,7 @@ use scripting additions
 on run
 	tell application "OmniFocus"
 		set nextName to "🗄Next"
-		set nextTag to (first item of (get tags of front document whose name is nextName))
+		set nextTag to (first item of (get flattened tags of front document whose name is nextName))
 		set validSelectedItemsList to omniLib's getSelectedActions()
 		repeat with taskOne in validSelectedItemsList
 			if name of tags of taskOne contains nextName then
