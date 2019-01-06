@@ -81,3 +81,17 @@ on addToTimings(pName)
 		return newProject
 	end tell
 end addToTimings
+
+on convertRGBColorToHexValue(theRGBValues)
+	set theHexList to {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
+	set theHexValue to ""
+	repeat with a from 1 to count of theRGBValues
+		set theCurrentRGBValue to (item a of theRGBValues) div 256
+		if theCurrentRGBValue is 256 then set theCurrentRGBValue to 255
+		set theFirstItem to item ((theCurrentRGBValue div 16) + 1) of theHexList
+		set theSecondItem to item (((theCurrentRGBValue / 16 mod 1) * 16) + 1) of theHexList
+		set theHexValue to (theHexValue & theFirstItem & theSecondItem) as string
+	end repeat
+	return ("#" & theHexValue) as string
+end convertRGBColorToHexValue
+
