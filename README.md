@@ -112,8 +112,8 @@ in OmniFocus. This can be changed in the `duration.applescript` file: change
 the argument of `getDuration` handle on line 6.
 
 5. **[Start Task](https://github.com/Rahlir/OmniFocusScripts/tree/master/Start%20Task)**:
-This is a quite complex script. It is for those people that are using the
-**Timing** app to track what they have done. This script takes the selected
+This is a quite complex script. It is for people that are using the
+**Timing** app to track their time. This script takes the selected
 task in OmniFocus and checks if the project or action group the task belongs to
 is in **Timing**. If not, it then offers to add this project to **Timing**: It
 dutifully asks you for the parent project this new project should belong to,
